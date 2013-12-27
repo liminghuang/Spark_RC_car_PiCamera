@@ -20,13 +20,18 @@ Remote control your RC Car and watch the live streaming at the same time.
 - You iPhone
 
 ## Installation
+1.
 Start HTTP streaming server in Pi with raspivid command.
 - raspivid -o - -t 9999999 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8554}' :demux=h264
 
+2.
 Modify the ViewController.m
 - ACCESS_TOKEN @"PUT YOUR ACCESS TOKEN"
 - DEVICE_ID @"PUT YOUR DEVICE ID"
 - PI_CAMERA_HOST @"http://YOUR PI IP or DOMAIN:8554/"
+
+3.
+Build this app and enjoy it:D
 
 ## Credits
 - Use [AFNetworking](https://github.com/AFNetworking/AFNetworking) for HTTP POST
