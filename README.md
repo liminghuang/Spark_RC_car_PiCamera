@@ -1,4 +1,4 @@
 Spark_RC_car_PiCamera
 =====================
 
-http://i.imgur.com/tjpyl0x.jpg
+![alt tag] http://i.imgur.com/tjpyl0x.jpg
