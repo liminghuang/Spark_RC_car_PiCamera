@@ -22,7 +22,7 @@ Remote control your RC Car and watch the live streaming at the same time.
 ## Installation
 1.
 Start HTTP streaming server in Pi with raspivid command.
-- raspivid -o - -t 9999999 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8554}' :demux=h264
+- raspivid -o - -t 9999999 -w 640 -h 320 -ex auto -n -mm matrix|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8554}' :demux=h264 2>&1 >/dev/null
 
 2.
 Modify the ViewController.m
